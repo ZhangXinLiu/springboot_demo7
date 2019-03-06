@@ -1,0 +1,23 @@
+#端口号和项目虚拟路径
+server:
+  port: 8080
+  servlet:
+    context-path: /
+#日志级别
+logging:
+  level:
+    com.lxz: debug
+#数据库连接池
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/travel
+    username: root
+    password: root
+#mybatis驼峰匹配
+mybatis:
+  #加载mybatis映射文件
+  #mapper-locations: mapper/*/xml
+  #别名扫描
+  type-aliases-package: com.lxz.pojo
+
